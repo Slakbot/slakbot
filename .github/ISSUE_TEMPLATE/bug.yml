@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in SlakBot does not work
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For questions and setup help, use the [Discord](https://discord.gg/d9cpruNpyX) instead — it is faster.
+
+        **This page is public.** Never post a bot token, a password, or a login link here.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did it go wrong?
+      options:
+        - In Discord
+        - In the dashboard (panel.slakbot.nl)
+        - In an OBS overlay
+        - Somewhere else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you get instead? Name the feature you were using.
+      placeholder: |
+        I turned on YouTube alerts and picked #announcements.
+        I expected a message when a new video went up, but nothing was posted.
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: Roughly when was this?
+      description: A date and time lets us find it in the logs. Your own timezone is fine.
+      placeholder: 8 September, around 14:00
+    validations:
+      required: false
+  - type: input
+    id: server
+    attributes:
+      label: Server ID (optional)
+      description: This makes it much easier to find. If you would rather not post it here, send it in Discord instead.
+    validations:
+      required: false

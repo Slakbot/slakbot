@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and setup help
+    url: https://discord.gg/d9cpruNpyX
+    about: Ask in Discord. You will usually get an answer faster than here.
+  - name: Dashboard
+    url: https://panel.slakbot.nl/dashboard
+    about: Set up SlakBot for your server.
+  - name: Status
+    url: https://slakbot.nl/status
+    about: Check whether something is already known to be down.
